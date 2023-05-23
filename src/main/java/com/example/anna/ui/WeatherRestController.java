@@ -1,7 +1,7 @@
-package com.example.weatherwebservice.ui;
+package com.example.anna.ui;
 
-import com.example.weatherwebservice.bussiness.Weather;
-import com.example.weatherwebservice.bussiness.WeatherService;
+import com.example.anna.bussiness.Weather;
+import com.example.anna.bussiness.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
