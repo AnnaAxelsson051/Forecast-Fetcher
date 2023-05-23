@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-    body {
-        background-color: mistyrose;
-    }
 </style>
 <head>
     <meta charset="UTF-8">
-    <title>Weather site</title>
+    <title>Best Weather</title>
 </head>
 <body>
-<h2 style="color:black;text-align:center;">Best Weather for Liljeholmen</h2>
-<form action="/bestweather" method="post">
-    <input type="text" name="xhour" placeholder="Select hours">
-    <input type="submit" value="Ok!">
+<!--User selects time of day-->
+<h1>Best weather at Liljeholmen</h1>
+<p>Please select a point in time</p>
+<form action="/optimalweather" method="post">
+    <input type="text" name="time" placeholder="Select time">
+    <input type="submit" value="Select">
 </form>
-<iframe src="https://giphy.com/embed/za5xikuRr0OzK" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 </body>
 </html>
