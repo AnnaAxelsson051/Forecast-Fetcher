@@ -1,4 +1,4 @@
-package com.example.weatherwebservice;
+package com.example.anna;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

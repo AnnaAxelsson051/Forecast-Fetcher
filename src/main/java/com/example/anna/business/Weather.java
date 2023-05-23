@@ -1,4 +1,4 @@
-package com.example.anna.bussiness;
+package com.example.anna.business;
 
 import java.time.LocalDateTime;
 

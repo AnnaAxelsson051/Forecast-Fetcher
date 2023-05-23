@@ -1,6 +1,6 @@
 package com.example.anna.ui;
 
-import com.example.anna.bussiness.WeatherService;
+import com.example.anna.business.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
