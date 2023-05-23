@@ -1,7 +1,7 @@
-package com.example.weatherwebservice.bussiness;
+package com.example.anna.business;
 
-import com.example.weatherwebservice.data.MetWeather;
-import com.example.weatherwebservice.data.SmhiWeather;
+import com.example.anna.data.MetWeather;
+import com.example.anna.data.SmhiWeather;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
