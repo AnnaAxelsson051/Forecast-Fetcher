@@ -1,6 +1,6 @@
-package com.example.weatherwebservice.data;
+package com.example.anna.data;
 
-import com.example.weatherwebservice.bussiness.Weather;
+import com.example.anna.business.Weather;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
