@@ -6,7 +6,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 @Repository
-public class MetWeather {
+public class MetWeatherClient {
     WebClient client = WebClient.create("");
 
     //Modify "String" to Example klass från json

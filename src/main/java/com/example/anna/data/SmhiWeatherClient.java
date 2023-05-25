@@ -10,7 +10,7 @@ import reactor.core.publisher.Mono;
 import java.util.List;
 
 @Repository
-    public class SmhiWeather {
+    public class SmhiWeatherClient {
     WebClient client = WebClient.create("");
 
     //Modify "String" to Example klass från json
@@ -22,18 +22,23 @@ import java.util.List;
                 .bodyToMono(Smhi.class);
         Smhi weather = m.block();
 
-        //delivers array of alla förutseelser framåt i tiden
-        //hitta alla parametrar ett dygn framåt
+        //delivers array of alla weather details 24 hrs forward
+        //Temp
         List<Parameter> parameters = weather.getTimeSeries().get(25).getParameters();
         String timeStamp = weather.getTimeSeries().get(25).getValidTime();
         double temp = -1000;
         for (Parameter p : parameters){
             if(p.getName().equals("t")){
                 temp = p.getValues().get(0);
-
+            }
+        }
+        double humidity = -1000;
+        for (Parameter p : parameters){
+            if(p.getName().equals("r")){
+                humidity = p.getValues().get(0);
             }
         }
 
-return new Weather("smhi", temp, 0, timeStamp);
+return new Weather("smhi", temp, humidity, timeStamp);
     }
 }

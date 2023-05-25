@@ -1,7 +1,7 @@
 package com.example.anna.business;
 
-import com.example.anna.data.MetWeather;
-import com.example.anna.data.SmhiWeather;
+import com.example.anna.data.MetWeatherClient;
+import com.example.anna.data.SmhiWeatherClient;
 import com.example.anna.model.Weather;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,13 +10,19 @@ import org.springframework.stereotype.Service;
 public class WeatherService {
 
     @Autowired
-    SmhiWeather smhiWeather;
+    SmhiWeatherClient smhiWeather;
     @Autowired
-    MetWeather metWeather;
+    MetWeatherClient metWeather;
 
     public Weather getOptimalWeather() {
-        Weather smhi = smhiWeather.getWeather();
-        //Weather met = metWeather.getWeather();
-        return smhi;
+        Weather smhiWeatherForeCast = smhiWeather.getWeather();
+        //Weather metWeatherForeCast = metWeather.getWeather();
+
+        if (smhiWeatherForeCast.getTemperature() > metWeatherForeCast.getTemperature()){
+            return smhiWeatherForeCast;
+        }else if (metWeatherForeCast.getTemperature() > smhiWeatherForeCast.getTemperature() ){
+            return metWeatherForeCast;
+        }
+        return smhiWeatherForeCast;
     }
 }
