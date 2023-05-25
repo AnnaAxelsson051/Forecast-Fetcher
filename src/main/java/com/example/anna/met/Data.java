@@ -1,7 +1,6 @@
 
 package com.example.anna.met;
 
-import javax.annotation.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -13,7 +12,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "next_1_hours",
     "next_6_hours"
 })
-@Generated("jsonschema2pojo")
 public class Data {
 
     @JsonProperty("instant")

@@ -1,7 +1,6 @@
 
 package com.example.anna.met;
 
-import javax.annotation.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -16,7 +15,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "wind_from_direction",
     "wind_speed"
 })
-@Generated("jsonschema2pojo")
 public class Units {
 
     @JsonProperty("air_pressure_at_sea_level")

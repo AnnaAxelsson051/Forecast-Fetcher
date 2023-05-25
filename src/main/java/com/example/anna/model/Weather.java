@@ -1,4 +1,4 @@
-package com.example.anna.business;
+package com.example.anna.model;
 
 import java.time.LocalDateTime;
 
@@ -7,13 +7,13 @@ public class Weather {
     private String origin;
     private double temperature;
     private double humidity;
-    private LocalDateTime timeStamp;
+    private String timeStamp;
 
     public Weather(){
 
     }
 
-    public Weather(String origin, double temperature, double humidity, LocalDateTime timeStamp) {
+    public Weather(String origin, double temperature, double humidity, String timeStamp) {
         this.origin = origin;
         this.temperature = temperature;
         this.humidity = humidity;
@@ -45,11 +45,11 @@ public class Weather {
         this.humidity = humidity;
     }
 
-    public LocalDateTime getTimeStamp() {
+    public String getTimeStamp() {
         return timeStamp;
     }
 
-    public void setTimeStamp(LocalDateTime timeStamp) {
+    public void setTimeStamp(String timeStamp) {
         this.timeStamp = timeStamp;
     }
 

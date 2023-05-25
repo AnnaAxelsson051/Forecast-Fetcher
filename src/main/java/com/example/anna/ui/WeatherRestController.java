@@ -1,6 +1,6 @@
 package com.example.anna.ui;
 
-import com.example.anna.business.Weather;
+import com.example.anna.model.Weather;
 import com.example.anna.business.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,8 +13,8 @@ public class WeatherRestController {
     @Autowired
     WeatherService weatherService;
 
-    @GetMapping("/rest/optimalweather/{time}")
-    public Weather getOptimalWeather(@PathVariable int time){
-        return weatherService.getOptimalWeather(time);
+    @GetMapping("/rest/optimalweather")
+    public Weather getOptimalWeather(){
+        return weatherService.getOptimalWeather();
     }
 }

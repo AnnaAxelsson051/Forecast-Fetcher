@@ -17,12 +17,7 @@ public class WeatherController {
     //Fetching what time user selected redirecting to display site
     @GetMapping("/optimalweather")
     public String getOptimalWeather(Model model){
-        return "display_weather";
-    }
-
-    @PostMapping("/optimalweather")
-    public String getOptimalWeather(@RequestParam int time, Model model){
-        model.addAttribute("weather", weatherService.getOptimalWeather(time));
+        model.addAttribute("weather", weatherService.getOptimalWeather());
         return "display_weather";
     }
 }

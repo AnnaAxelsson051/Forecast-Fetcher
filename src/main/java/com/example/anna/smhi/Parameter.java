@@ -2,7 +2,6 @@
 package com.example.anna.smhi;
 
 import java.util.List;
-import javax.annotation.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -15,7 +14,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "unit",
     "values"
 })
-@Generated("jsonschema2pojo")
 public class Parameter {
 
     @JsonProperty("name")

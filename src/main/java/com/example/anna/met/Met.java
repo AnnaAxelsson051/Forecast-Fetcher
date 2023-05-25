@@ -1,7 +1,6 @@
 
 package com.example.anna.met;
 
-import javax.annotation.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -12,7 +11,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "geometry",
     "properties"
 })
-@Generated("jsonschema2pojo")
 public class Met {
 
     @JsonProperty("type")
