@@ -9,6 +9,9 @@ public class Weather {
     private double humidity;
     private LocalDateTime timeStamp;
 
+    public Weather(){
+
+    }
 
     public Weather(String origin, double temperature, double humidity, LocalDateTime timeStamp) {
         this.origin = origin;
@@ -17,9 +20,6 @@ public class Weather {
         this.timeStamp = timeStamp;
     }
 
-    public Weather(){
-
-    }
 
     public String getOrigin() {
         return origin;
