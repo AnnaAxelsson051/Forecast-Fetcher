@@ -25,11 +25,11 @@ public class MetWeatherClient {
                 .bodyToMono(Met.class);
         Met weather = m.block();
 
-
         Data data = weather.getProperties().getTimeseries().get(26).getData();
         String timeStamp = weather.getProperties().getTimeseries().get(26).getTime();
         Double temp = data.getInstant().getDetails().getAirTemperature();
         Double humidity = data.getInstant().getDetails().getRelativeHumidity();
+
         return new Weather("Met", temp, humidity , timeStamp);
     }
 

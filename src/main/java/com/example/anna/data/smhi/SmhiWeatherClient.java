@@ -22,8 +22,6 @@ public class SmhiWeatherClient {
                 .bodyToMono(Smhi.class);
         Smhi weather = m.block();
 
-        //delivers array of alla weather details 24 hrs forward
-        //Temp
         List<Parameter> parameters = weather.getTimeSeries().get(25).getParameters();
         String timeStamp = weather.getTimeSeries().get(25).getValidTime();
         double temp = -1000;

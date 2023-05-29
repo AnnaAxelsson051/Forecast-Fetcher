@@ -10,13 +10,13 @@ import org.springframework.stereotype.Service;
 public class WeatherService {
 
     @Autowired
-    SmhiWeatherClient smhiWeather;
+    SmhiWeatherClient smhiWeatherClient;
     @Autowired
-    MetWeatherClient metWeather;
+    MetWeatherClient metWeatherClient;
 
     public Weather getOptimalWeather() {
-        Weather smhiWeatherForecast = smhiWeather.getWeather();
-        Weather metWeatherForecast = metWeather.getWeather();
+        Weather smhiWeatherForecast = smhiWeatherClient.getWeather();
+        Weather metWeatherForecast = metWeatherClient.getWeather();
 
         if (smhiWeatherForecast.getTemperature() > metWeatherForecast.getTemperature()){
             return smhiWeatherForecast;
