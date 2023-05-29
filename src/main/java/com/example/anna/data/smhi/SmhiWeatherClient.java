@@ -1,4 +1,4 @@
-package com.example.anna.data;
+package com.example.anna.data.smhi;
 
 import com.example.anna.model.Weather;
 import com.example.anna.smhi.Parameter;
@@ -10,7 +10,7 @@ import reactor.core.publisher.Mono;
 import java.util.List;
 
 @Repository
-    public class SmhiWeatherClient {
+public class SmhiWeatherClient {
     WebClient client = WebClient.create("");
 
     //Modify "String" to Example klass från json
@@ -39,6 +39,6 @@ import java.util.List;
             }
         }
 
-return new Weather("smhi", temp, humidity, timeStamp);
+        return new Weather("smhi", temp, humidity, timeStamp);
     }
 }

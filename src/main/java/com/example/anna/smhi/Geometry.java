@@ -11,7 +11,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "type",
     "coordinates"
 })
-
 public class Geometry {
 
     @JsonProperty("type")

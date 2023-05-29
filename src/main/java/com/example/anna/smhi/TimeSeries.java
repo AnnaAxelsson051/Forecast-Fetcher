@@ -11,7 +11,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "validTime",
     "parameters"
 })
-
 public class TimeSeries {
 
     @JsonProperty("validTime")

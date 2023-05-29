@@ -13,7 +13,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "geometry",
     "timeSeries"
 })
-
 public class Smhi {
 
     @JsonProperty("approvedTime")
