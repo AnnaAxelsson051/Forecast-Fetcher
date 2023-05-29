@@ -17,7 +17,6 @@ import java.util.List;
 public class MetWeatherClient {
     WebClient client = WebClient.create("");
 
-    //Modify "String" to Example klass från json
     public Weather getWeather() {
         Mono<Met> m = client
                 .get()
