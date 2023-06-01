@@ -35,7 +35,7 @@ public class MeteoWeatherClient {
         Double temp = weather.getHourly().getTemperature2m().get(index);
         int humidity = weather.getHourly().getRelativehumidity2m().get(index);
         String timeStamp = weather.getHourly().getTime().get(index);
-        return new Weather("meteo", temp, humidity, timeStamp);
+        return new Weather("Meteo", temp, humidity, timeStamp);
 
     }
     }

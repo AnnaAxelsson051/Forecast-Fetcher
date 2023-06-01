@@ -37,6 +37,6 @@ public class SmhiWeatherClient {
             }
         }
 
-        return new Weather("smhi", temp, humidity, timeStamp);
+        return new Weather("Smhi", temp, humidity, timeStamp);
     }
 }
