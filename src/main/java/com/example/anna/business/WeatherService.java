@@ -1,6 +1,7 @@
 package com.example.anna.business;
 
 import com.example.anna.data.met.MetWeatherClient;
+import com.example.anna.data.meteo.MeteoWeatherClient;
 import com.example.anna.data.smhi.SmhiWeatherClient;
 import com.example.anna.model.Weather;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,16 +14,20 @@ public class WeatherService {
     SmhiWeatherClient smhiWeatherClient;
     @Autowired
     MetWeatherClient metWeatherClient;
+    @Autowired
+    MeteoWeatherClient meteoWeatherClient;
 
     public Weather getOptimalWeather() {
         Weather smhiWeatherForecast = smhiWeatherClient.getWeather();
         Weather metWeatherForecast = metWeatherClient.getWeather();
-
+        Weather meteoWeatherForecast = meteoWeatherClient.getWeather();
+/*
         if (smhiWeatherForecast.getTemperature() > metWeatherForecast.getTemperature()){
             return smhiWeatherForecast;
         }else if (metWeatherForecast.getTemperature() > smhiWeatherForecast.getTemperature() ){
             return metWeatherForecast;
         }
-        return smhiWeatherForecast;
+        return smhiWeatherForecast;*/
+        return meteoWeatherForecast;
     }
 }
