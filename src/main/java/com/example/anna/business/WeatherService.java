@@ -21,13 +21,13 @@ public class WeatherService {
         Weather smhiWeatherForecast = smhiWeatherClient.getWeather();
         Weather metWeatherForecast = metWeatherClient.getWeather();
         Weather meteoWeatherForecast = meteoWeatherClient.getWeather();
-/*
-        if (smhiWeatherForecast.getTemperature() > metWeatherForecast.getTemperature()){
+
+        if (smhiWeatherForecast.getTemperature() > metWeatherForecast.getTemperature() && smhiWeatherForecast.getTemperature() > meteoWeatherForecast.getTemperature()){
             return smhiWeatherForecast;
-        }else if (metWeatherForecast.getTemperature() > smhiWeatherForecast.getTemperature() ){
+        }else if (metWeatherForecast.getTemperature() > smhiWeatherForecast.getTemperature() && metWeatherForecast.getTemperature() > meteoWeatherForecast.getTemperature()){
             return metWeatherForecast;
+        } else{
+            return meteoWeatherForecast;
         }
-        return smhiWeatherForecast;*/
-        return meteoWeatherForecast;
     }
 }
