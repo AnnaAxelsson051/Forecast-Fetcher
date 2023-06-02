@@ -9,7 +9,7 @@
 
     * {
         margin: 0;
-        font-family: "Raleway", sans-serif;
+        /*font-family: "Raleway", sans-serif;*/
     }
     nav {
         display: flex;
@@ -61,10 +61,10 @@
     <p class="app-name">Weather Forecast</p>
     <ul class="nav-link-list">
         <li>
-            <a class="nav-link">ABOUT</a>
+            <a class="nav-link">About</a>
         </li>
         <li>
-            <a class="nav-link" href="#footer">CONTACT</a>
+            <a class="nav-link" href="#footer">Contact</a>
         </li>
     </ul>
 
@@ -74,5 +74,9 @@
 <p>🌡️ <b>Temperature:</b> <span th:text="${weather.temperature}" ️></span>&nbsp;ºC</p>
 <p>💦 <b>Humidity:</b> <span th:text="${weather.humidity}"></span>&nbsp;% </p>
 <p>⏱️ <b>Time:</b><span th:text="${weather.timeStamp}">️</span></p>
+
+<footer id="footer">
+    <p>a.axelsson51@gmail.com</p>
+</footer>
 </body>
 </html>

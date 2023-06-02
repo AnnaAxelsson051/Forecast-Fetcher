@@ -1,4 +1,4 @@
-# WEATHER WEB SERVICE
+# Weather Web Service
 
 ## Description
 
@@ -15,3 +15,5 @@ A web service that fetches data with REST from three open weather forecast servi
 - HTML
 - CSS
 - Json
+
+---
