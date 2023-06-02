@@ -1,17 +1,11 @@
 package com.example.anna.data.met;
 
 import com.example.anna.met.Data;
-import com.example.anna.met.Details;
 import com.example.anna.met.Met;
-import com.example.anna.met.Timeseries;
 import com.example.anna.model.Weather;
-import com.example.anna.smhi.Parameter;
-import com.example.anna.smhi.TimeSeries;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
-
-import java.util.List;
 
 @Repository
 public class MetWeatherClient {
