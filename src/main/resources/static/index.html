@@ -7,13 +7,85 @@
     <title>Optimal Weather</title>
 </head>
 <body>
+<style>
 
+    * {
+        margin: 0;
+        font-family: "Raleway", sans-serif;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        /*background: linear-gradient(to bottom, #0096c7, #0077b6, #48cae4);*/
+        background: linear-gradient(to bottom, #0096c7, #0e8fd3, #189be1, #48cae4);
+        padding: 30px 40px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
+        height: 8.8vh;
+
+    }
+
+    .app-name {
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        font-family: "Raleway";
+    }
+
+
+    .nav-link-list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding: 30px;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        font-weight: 700;
+        color: white;
+        padding: 30px;
+
+    }
+
+    .get-weather-button {
+        display: block;
+        text-decoration: none;
+        margin: 4px 2px;
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
+        padding: 10px 20px;
+        color: white;
+        cursor: pointer;
+        border: 2px solid #fff8eca2;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
+        background: linear-gradient(to bottom, #f1e1bf, #b9a273, #a69064);
+        transition: all 0.2s;
+        z-index: 1;
+    }
+
+</style>
+
+<nav>
+    <p class="app-name">Weather Forecast</p>
+    <ul class="nav-link-list">
+        <li>
+            <a class="nav-link">ABOUT</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#footer">CONTACT</a>
+        </li>
+    </ul>
+
+</nav>
 <!--Allows user to select time of day-->
-<h1>The most optimal weather</h1>
+<h1>The Best Weather</h1>
 <p>Click to view the most optimal weather forecast 24 hours in advance in Stockholm, Liljeholmen</p>
 <form action="/optimalweather" method="get">
     <!--<input type="text" name="time" placeholder="Select time">-->
-    <input type="submit" value="Get forecast">
+    <input class="get-weather-button" type="submit" value="Get forecast">
 </form>
 </body>
 </html>
