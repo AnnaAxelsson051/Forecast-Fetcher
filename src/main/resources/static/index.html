@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;600;700&family=Herr+Von+Muellerhoff&family=Ibarra+Real+Nova:wght@500;600;700&family=Pinyon+Script&family=Playfair+Display:wght@400;500;900&family=Questrial&family=Raleway:wght@200;300;800;900&family=Viaoda+Libre&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;600;700&family=Herr+Von+Muellerhoff&family=Ibarra+Real+Nova:wght@500;600;700&family=Pinyon+Script&family=Playfair+Display:wght@400;500;900&family=Questrial&family=Raleway:wght@200;300;400;500;600;700;800;900&family=Viaoda+Libre&display=swap"
             rel="stylesheet"
     />
     <title>Optimal Weather</title>
@@ -34,9 +34,6 @@
 
     }
 
-    h1{
-
-    }
 
     .app-name {
         font-size: 40px;
@@ -60,48 +57,7 @@
 
     }
 
-    .get-weather-button {
-        display: block;
-        text-decoration: none;
-        margin: 4px 2px;
-        text-align: center;
-        font-size: 0.9rem;
-        font-weight: 500;
-        letter-spacing: 0.2rem;
-        padding: 10px 20px;
-        color: white;
-        cursor: pointer;
-        border: 2px solid #fff8eca2;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
-        background: linear-gradient(to bottom, #f1e1bf, #b9a273, #a69064);
-        transition: all 0.2s;
-        z-index: 1;
-    }
-
-    .get-weather-button:hover,
-    .get-weather-button:active {
-        background: linear-gradient(to bottom, #0096c7, #0e8fd3, #189be1, #48cae4);
-        color: white;
-        transition: 0.3s;
-        box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
-    }
-
-    .get-weather-button:active{
-        transform: translateY(3px);
-    }
-
-    .get-weather-button:hover {
-        transform: translateY(-3px);
-    }
-
-    footer {
-        display: flex;
-        justify-content: center;
-        padding: 100px 30px;
-        background-color: #a69064;
-        margin-top: 30px;
-    }
-
+/********************* Cloud image **********************/
 
     .small-btn1{
         animation-name: moveInBottom;
@@ -204,7 +160,7 @@
         padding: 1.4rem;
         border-radius: 50%;
         color: white;
-       /* background-image: linear-gradient(to bottom, #fcfdfd,#fcfdfd,#d6f2f7, #a8d7e0,#d6f2f7,rgb(0, 162, 255), #1f8afc,#189be1,#189be1);*/
+        /* background-image: linear-gradient(to bottom, #fcfdfd,#fcfdfd,#d6f2f7, #a8d7e0,#d6f2f7,rgb(0, 162, 255), #1f8afc,#189be1,#189be1);*/
         background-color: red;
         background-image: linear-gradient(to bottom,#fcfdfd,#fcfdfd,#fcfdfd,#d6f2f7, #a8d7e0,#d6f2f7,rgb(0, 162, 255), #1f8afc,#189be1,#189be1);
         /*box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);*/
@@ -260,7 +216,7 @@
         border-radius: 50%;
         color: white;
 
-       background-image: linear-gradient(to bottom,#fcfdfd, #fcfdfd,#fcfdfd,#d6f2f7, #a8d7e0,#a8d7e0, #a8d7e0,#d6f2f7,rgb(0, 162, 255), #1f8afc,#189be1);
+        background-image: linear-gradient(to bottom,#fcfdfd, #fcfdfd,#fcfdfd,#d6f2f7, #a8d7e0,#a8d7e0, #a8d7e0,#d6f2f7,rgb(0, 162, 255), #1f8afc,#189be1);
 
         /*box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);*/
         position: absolute;
@@ -346,6 +302,75 @@
         opacity: .7;
     }
 
+    /******************* Descriptions ********************/
+
+    h1{
+        margin-left:30px;
+        margin-top:30px;
+    }
+    h3 {
+        margin-left:30px;
+        margin-top:20px;
+        font-size: 30px;
+        color:#a69064;
+        font-weight: 600;
+    }
+
+    p{
+        margin-left:30px;
+    }
+
+    .describing-text {
+        margin-top:5px;
+    }
+
+
+    .get-weather-button {
+        margin-left: 30px;
+        margin-top: 30px;
+        display: block;
+        text-decoration: none;
+        /*margin: 4px 2px;*/
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
+        padding: 10px 20px;
+        color: white;
+        cursor: pointer;
+        border: 2px solid #fff8eca2;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
+        background: linear-gradient(to bottom, #f1e1bf, #b9a273, #a69064, #79643a);
+        transition: all 0.2s;
+        z-index: 1;
+    }
+
+    .get-weather-button:hover,
+    .get-weather-button:active {
+        background: linear-gradient(to bottom, #0096c7, #0e8fd3, #189be1, #48cae4);
+        color: white;
+        transition: 0.3s;
+        box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    }
+
+    .get-weather-button:active{
+        transform: translateY(3px);
+    }
+
+    .get-weather-button:hover {
+        transform: translateY(-3px);
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        padding: 100px 30px;
+        background-color: #a69064;
+        margin-top: 30px;
+    }
+
+
+
 </style>
 
 <nav>
@@ -378,24 +403,26 @@
 <!--Allows user to select time of day-->
 <h1>The Best Weather</h1>
 <p>Are you interested in knowing the weather forecast for Stockholm tomorrow?
-Here you can find the best / warmest weather forecast with heat and humidity data from Smhi, Met and Meteo API's </p>
-<form action="/optimalweather" method="get">
-    <!--<input type="text" name="time" placeholder="Select time">-->
-    <input class="get-weather-button" type="submit" value="Get forecast">
-</form>
+Here you can find the best / warmest weather forecast with heat and humidity data from Smhi, Met and Meteo API </p>
 
-<h2>Smhi</h2>
-<p>The Swedish Meteorological and Hydrological Institute (SMHI) is a Government agency in Sweden.
+<h3>Smhi</h3>
+<p class="describing-text">The Swedish Meteorological and Hydrological Institute (SMHI) is a Government agency in Sweden.
     SMHI was founded on 1 January 1873 as an autonomous part of the Royal Swedish Academy of Sciences.
     The first meteorological observations began on July 1, 1874, and the first forecasts were issued in 1880.
     In 1924 forcasts were broadcast on Stockholm radio</p>
-<h2>Met</h2>
-<p>The Norwegian Meteorological Institute (MET), also known internationally, is Norway's national meteorological institute.
+<h3>Met</h3>
+<p class="describing-text">The Norwegian Meteorological Institute (MET), also known internationally, is Norway's national meteorological institute.
     It provides weather forecasts for civilian and military uses and conducts research in meteorology, oceanography and climatology.
     It was founded on 1 December 1866 and is headquartered in Oslo.</p>
-<h2>Open Meteo</h2>
-<p>Open-Meteo is an open-source weather API with free access for non-commercial use.
+<h3>Open Meteo</h3>
+<p class="describing-text">Open-Meteo is an open-source weather API with free access for non-commercial use.
     Open-Meteo collaborates with national weather services providing open data with 1 to 11 km resolution worldwide.</p>
+
+<form action="/optimalweather" method="get">
+    <!--<input type="text" name="time" placeholder="Select time">-->
+    <input class="get-weather-button" type="submit" value="🌤 Get forecast">
+</form>
+
 
 <footer id="footer">
     <p>a.axelsson51@gmail.com</p>
