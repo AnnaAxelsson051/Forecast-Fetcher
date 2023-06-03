@@ -4,6 +4,12 @@
 </style>
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;600;700&family=Herr+Von+Muellerhoff&family=Ibarra+Real+Nova:wght@500;600;700&family=Pinyon+Script&family=Playfair+Display:wght@400;500;900&family=Questrial&family=Raleway:wght@200;300;800;900&family=Viaoda+Libre&display=swap"
+            rel="stylesheet"
+    />
     <title>Optimal Weather</title>
 </head>
 <body>
@@ -12,26 +18,30 @@
     * {
         margin: 0;
         font-family: "Raleway", sans-serif;
+
     }
     nav {
         display: flex;
         justify-content: space-between;
         /*background: linear-gradient(to bottom, #0096c7, #0077b6, #48cae4);*/
         /*background: linear-gradient(to bottom, #0096c7, #0e8fd3, #189be1, #48cae4);*/
-        background: linear-gradient(to top,#189be1, #189be1,#0096c7, #0e8fd3, #189be1, #48cae4);
-        /*background-color: #189be1;*/
+        background: linear-gradient(to top,#189be1, #189be1,#0096c7, #0e8fd3, #189be1, #48cae4,#91ebfd);
         padding: 30px 40px;
         margin-bottom: 20px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
         height: 8.8vh;
 
+
+    }
+
+    h1{
+
     }
 
     .app-name {
-        font-size: 50px;
+        font-size: 40px;
         font-weight: bold;
         color: white;
-        font-family: "Raleway";
     }
 
 
@@ -339,7 +349,7 @@
 </style>
 
 <nav>
-    <p class="app-name">Weather Forecast☀️</p>
+    <p class="app-name">Weather Forecast ☀️</p>
     <ul class="nav-link-list">
         <li>
             <a class="nav-link">ABOUT</a>
@@ -367,11 +377,19 @@
 </nav>
 <!--Allows user to select time of day-->
 <h1>The Best Weather</h1>
-<p>Click to view the most optimal weather forecast 24 hours in advance in Stockholm, Liljeholmen</p>
+<p>Are you interested in knowing the weather forecast for Stockholm tomorrow?
+Here you can find the best / warmest weather forecast with heat and humidity data from Smhi, Met and Meteo API's </p>
 <form action="/optimalweather" method="get">
     <!--<input type="text" name="time" placeholder="Select time">-->
     <input class="get-weather-button" type="submit" value="Get forecast">
 </form>
+
+<h2>Smhi</h2>
+<p></p>
+<h2>Met</h2>
+<p></p>
+<h2>Meteo</h2>
+<p></p>
 
 <footer id="footer">
     <p>a.axelsson51@gmail.com</p>
