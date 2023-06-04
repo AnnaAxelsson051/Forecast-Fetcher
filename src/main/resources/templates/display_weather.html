@@ -285,19 +285,30 @@
         margin-bottom: 130px;
         padding: 40px;
         height:40vh;
-        border: 2px solid #fff8eca2;
-        border: 2px solid #a69064;
+        border: 1px solid #a69064;;
+
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
         box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
-
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
+        box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
+        border-radius: 15px;
+        /*background: linear-gradient(to bottom, #fef4e2, #f7e7c7, #d4bf94, #a69064);*/
+        /*background-color: #a69064;*/
+        /*background: linear-gradient(to bottom, #fcf5e9, #f7e7c7, #d4bf94, #c4af85);
+    */
     }
+
 
     h1{
         margin-bottom:20px;
-        color: #a69064;
         font-size: 35px;
         text-align: center;
+        color:white;
+        color: #a69064;
+        color: #59461e;
+        color: #a69064;
     }
 
     .weather-display-container-content{
@@ -305,9 +316,23 @@ align-content: center;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
         box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
-        padding:40px;
-        margin-left: 40px;
-        margin-right: 40px;
+        /*padding:10px;*/
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 10px;
+        margin-left: 70px;
+        margin-right: 70px;
+        border-radius: 10px;
+        background-color: #fef4e2;
+      /*  background: linear-gradient(to bottom, #d3c097, #988050, #75613a);
+        background: linear-gradient(to bottom, #f1e1bf, #b9a273, #a69064);
+        background: linear-gradient(to bottom, #d3c097, #988050, #75613a);
+        background: linear-gradient(to bottom, #fef4e2, #f7e7c7, #d4bf94, #a69064);*/
+        background: linear-gradient(to bottom, #fef4e2, #f7e7c7, #d4bf94, #a69064);
+line-height: 1.5;
+        font-size: 18px;
+        color: #423212;
+
     }
 
     .weather-detail {
@@ -359,12 +384,13 @@ align-content: center;
 <div class="weather-display-container">
 <h1>The Best Weather</h1>
     <div class="weather-display-container-content">
-<p class="weather-detail">🧭 <b>Origin:</b> <span th:text="${weather.origin}"></span></p>
-<p class="weather-detail">🌡️ <b>Temperature:</b> <span th:text="${weather.temperature}" ️></span>&nbsp;ºC</p>
-<p class="weather-detail">💦 <b>Humidity:</b> <span th:text="${weather.humidity}"></span>&nbsp;% </p>
-<p class="weather-detail">⏱️ <b>Time: </b><span th:text="${weather.timeStamp}">️</span></p>
+<p class="weather-detail"> <b>Origin:</b> <span th:text="${weather.origin}"></span></p>
+<p class="weather-detail"> <b>Temperature:</b> <span th:text="${weather.temperature}" ️></span>&nbsp;ºC</p>
+<p class="weather-detail"> <b>Humidity:</b> <span th:text="${weather.humidity}"></span>&nbsp;% </p>
+<p class="weather-detail"> <b>Time: </b><span th:text="${weather.timeStamp}">️</span></p>
     </div>
 </div>
+<!--🧭 🌡️ 💦 ⏱️-->
 
 <footer id="footer">
     <p>a.axelsson51@gmail.com</p>
