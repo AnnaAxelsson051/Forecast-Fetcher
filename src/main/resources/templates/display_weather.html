@@ -289,14 +289,25 @@
         border: 2px solid #a69064;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
         box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
 
     }
 
     h1{
-        margin-bottom:50px;
+        margin-bottom:20px;
         color: #a69064;
         font-size: 35px;
         text-align: center;
+    }
+
+    .weather-display-container-content{
+align-content: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
+        box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
+        padding:40px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     .weather-detail {
@@ -347,10 +358,12 @@
 
 <div class="weather-display-container">
 <h1>The Best Weather</h1>
+    <div class="weather-display-container-content">
 <p class="weather-detail">🧭 <b>Origin:</b> <span th:text="${weather.origin}"></span></p>
 <p class="weather-detail">🌡️ <b>Temperature:</b> <span th:text="${weather.temperature}" ️></span>&nbsp;ºC</p>
 <p class="weather-detail">💦 <b>Humidity:</b> <span th:text="${weather.humidity}"></span>&nbsp;% </p>
-<p class="weather-detail">⏱️ <b>Time:</b><span th:text="${weather.timeStamp}">️</span></p>
+<p class="weather-detail">⏱️ <b>Time: </b><span th:text="${weather.timeStamp}">️</span></p>
+    </div>
 </div>
 
 <footer id="footer">

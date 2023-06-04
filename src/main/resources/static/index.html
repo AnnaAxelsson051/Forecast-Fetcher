@@ -310,6 +310,7 @@ background-color: green;
         border: 2px solid #fff8eca2;
         border: 2px solid #a69064;
         box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
     }
 
     .describing-text {
@@ -340,7 +341,7 @@ background-color: green;
         background: linear-gradient(to bottom, #f1e1bf, #b9a273, #a69064);
         background: linear-gradient(to bottom, #d3c097, #988050, #75613a);
         transition: all 0.2s;
-        z-index: 1;
+        border-radius: 10px;
     }
 
     .get-weather-button:hover,
@@ -405,22 +406,22 @@ background-color: green;
 The service displays only the best / warmest weather forecast with heat and humidity data from Smhi, Met and Meteo API. </p>
 
 <div class="describing-text-container">
-<h3>Smhi</h3>
+<h3>&#10070; Smhi</h3>
 <p class="describing-text">The Swedish Meteorological and Hydrological Institute (SMHI) is a Government agency in Sweden.
     SMHI was founded on 1 January 1873 as an autonomous part of the Royal Swedish Academy of Sciences.
     The first meteorological observations began on July 1, 1874, and the first forecasts were issued in 1880.
     In 1924 forcasts were broadcast on Stockholm radio</p>
-<h3 class="sub-heading">Met</h3>
+<h3 class="sub-heading">&#10070; Met</h3>
 <p class="describing-text">The Norwegian Meteorological Institute (MET), also known internationally, is Norway's national meteorological institute.
     It provides weather forecasts for civilian and military uses and conducts research in meteorology, oceanography and climatology.
     It was founded on 1 December 1866 and is headquartered in Oslo.</p>
-<h3 class="sub-heading">Open Meteo</h3>
+<h3 class="sub-heading">&#10070; Open Meteo</h3>
 <p class="describing-text">Open-Meteo is an open-source weather API with free access for non-commercial use.
     Open-Meteo collaborates with national weather services providing open data with 1 to 11 km resolution worldwide.</p>
 </div>
 <form action="/optimalweather" method="get">
     <!--<input type="text" name="time" placeholder="Select time">-->
-    <input class="get-weather-button" type="submit" value="🌤 Get forecast">
+    <input class="get-weather-button" type="submit" value="🌤 Get The Forecast">
 </form>
 
 
