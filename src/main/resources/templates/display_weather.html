@@ -278,24 +278,37 @@
     }
     /******************* Descriptions ********************/
 
+    .weather-display-container {
+        margin-left: 300px;
+        margin-right: 300px;
+        margin-top: 90px;
+        margin-bottom: 130px;
+        padding: 40px;
+        height:40vh;
+        border: 2px solid #fff8eca2;
+        border: 2px solid #a69064;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
+        box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+
+    }
+
     h1{
-        margin-left:30px;
-        margin-top:30px;
+        margin-bottom:50px;
         color: #a69064;
         font-size: 35px;
+        text-align: center;
     }
+
+    .weather-detail {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
     h3 {
         font-size: 30px;
         color:#a69064;
         font-weight: 600;
     }
-
-    .weather-display-container {
-        margin: 60px auto;
-        padding: 30px;
-        background-color: red;
-    }
-
 
     footer {
         display: flex;
@@ -334,10 +347,10 @@
 
 <div class="weather-display-container">
 <h1>The Best Weather</h1>
-<p>🧭 <b>Origin:</b> <span th:text="${weather.origin}"></span></p>
-<p>🌡️ <b>Temperature:</b> <span th:text="${weather.temperature}" ️></span>&nbsp;ºC</p>
-<p>💦 <b>Humidity:</b> <span th:text="${weather.humidity}"></span>&nbsp;% </p>
-<p>⏱️ <b>Time:</b><span th:text="${weather.timeStamp}">️</span></p>
+<p class="weather-detail">🧭 <b>Origin:</b> <span th:text="${weather.origin}"></span></p>
+<p class="weather-detail">🌡️ <b>Temperature:</b> <span th:text="${weather.temperature}" ️></span>&nbsp;ºC</p>
+<p class="weather-detail">💦 <b>Humidity:</b> <span th:text="${weather.humidity}"></span>&nbsp;% </p>
+<p class="weather-detail">⏱️ <b>Time:</b><span th:text="${weather.timeStamp}">️</span></p>
 </div>
 
 <footer id="footer">
