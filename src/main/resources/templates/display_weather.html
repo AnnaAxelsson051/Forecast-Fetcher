@@ -10,7 +10,7 @@
     />
     <title>Display Weather</title>
 </head>
-<body>
+
 <style>
 
     * {
@@ -18,6 +18,11 @@
         font-family: "Raleway", sans-serif;
 
     }
+
+    body{
+        background-image: url(background-image.jpg);
+    /*<img src="../static/images/background-image.jpg" width="1000" th:src="@{images/background-image.jpg}">
+    */}
     nav {
         display: flex;
         justify-content: space-between;
@@ -284,44 +289,55 @@
         margin-top: 90px;
         margin-bottom: 140px;
         padding: 35px;
-        height:43vh;
-       /* border: 1px solid #a69064;*/
+        height:44vh;
+       border: 2px solid #a69064;
 
         box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
         box-shadow: 2px 2px 10px #a69064;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
         border-radius: 15px;
-        background: linear-gradient(to bottom, #fef4e2, #f7e7c7, #d4bf94, #a69064);
-
         background: linear-gradient(to bottom,#fef4e2,#f7e7c7,#d4bf94,#a69064);
-
-
-
     }
 .weather-display-container-frame{
     border-radius: 13px;
     box-shadow: 2px 2px 10px #a69064;
-    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
     height: 310px;
+
+
+
+    background-color: white;
+  /*  background: linear-gradient(to bottom,#fef4e2,#f7e7c7,#d4bf94,#a69064);
+    background-color: #a69064;
+    background: linear-gradient(to bottom, #e0c99e, #dec89e,#b9a273, #a69064, #77633c);
+    background: linear-gradient(to bottom, #e0c99e, #dec89e,#dec89e,#dec89e,#a69064);
+    background: linear-gradient(to bottom, #e0c99e, #dec89e,#b9a273, #a69064, #77633c);
+    background: linear-gradient(to bottom,#fef4e2,#f7e7c7,#d4bf94,#a69064);
+*/}
+
+
+
+.heading-container{
+    /*background-color: rgba(94, 204, 51, 0.14);*/
 }
 
     h1{
         /*margin-bottom:20px;*/
         margin-bottom: 5px;
-        padding-top: 20px;
+        padding-top: 30px;
         font-size: 35px;
         text-align: center;
         color:#a69064;
-       /* color:white;
-        color: #a69064;
-        color: #59461e;
-        color: #a69064;
-        color: #59461e;*/
+        color: white;
+        color:#a69064;
     }
 
     .thermometer{
         font-size: 50px;
         margin-left: 100px;
+        margin-bottom: 10px;
+        color: #a69064;
     }
 
     .weather-display-container-content{
@@ -329,12 +345,21 @@
         padding-bottom: 30px;
         /*padding-top: 20px;
         padding-left: 10px;*/
-        margin-left: 100px;
-        margin-right: 70px;
+        margin-left: 80px;
         border-radius: 10px;
   line-height: 1.5;
         font-size: 18px;
         color: #423212;
+      color: black;
+        color:#a69064;
+        color: #423212;
+        color: black;
+
+
+
+
+
+
 
     }
 
@@ -359,7 +384,7 @@
 
 
 </style>
-
+<body>
 <nav>
     <p class="app-name">Forecast Fetcher ☀️</p>
     <ul class="nav-link-list">
@@ -384,20 +409,20 @@
     <button class="small-btn12 bouble"></button>
     <button class="small-btn13 bouble"></button>
 </nav>
-
-<div class="weather-display-container">
+<!--<img src="../static/images/background-image.jpg" width="1000" th:src="@{images/background-image.jpg}">
+--><div class="weather-display-container">
     <div class="weather-display-container-frame">
-<h1>Weather Tomorrow</h1>
+<div class="heading-container"><h1>Weather Tomorrow</h1></div>
     <div class="weather-display-container-content">
-        <div class="thermometer">🌡️</div>
-<p class="weather-detail"> &#10144; Origin: <span th:text="${weather.origin}"></span></p>
-<p class="weather-detail"> &#10144; Temperature: <span th:text="${weather.temperature}" ️></span>&nbsp;ºC</p>
-<p class="weather-detail"> &#10144; Humidity: <span th:text="${weather.humidity}"></span>&nbsp;% </p>
-<p class="weather-detail"> &#10144; Time: <span th:text="${weather.timeStamp}">️</span></p>
+        <div class="thermometer">&#9759;</div>
+        <p class="weather-detail"><b>&check; &nbsp;&nbsp;&nbsp; Origin: </b><span th:text="${weather.origin}"></span></p>
+<p class="weather-detail"><b>&#9728; &nbsp;&nbsp; Temperature: </b><span th:text="${weather.temperature}" ️></span>&nbsp;ºC</p>
+<p class="weather-detail"><b>&#9730; &nbsp;&nbsp; Humidity: </b> <span th:text="${weather.humidity}"></span>&nbsp;% </p>
+<p class="weather-detail"><b>&#10050; &nbsp;&nbsp;&nbsp; Time: </b><span th:text="${weather.timeStamp}">️</span></p>
     </div>
     </div>
 </div>
-<!--🧭 🌡️ 💦 ⏱️-->
+<!--🧭 🌡️ 💦 ⏱️ &#10144;  background-color: rgba(94, 204, 51, 0.14);-->
 
 <footer id="footer">
     <p>a.axelsson51@gmail.com</p>
