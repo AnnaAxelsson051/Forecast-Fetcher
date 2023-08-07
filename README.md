@@ -22,9 +22,9 @@ A web service that fetches data with REST from multiple open weather forecast se
 - CSS
 - Json
 
+---
 
+## More UI
 
-![Screenshot 2023-06-05 at 22 05 06](https://github.com/AnnaAxelsson051/Open_AI_Codex/assets/103879144/a6ef3d23-6fd7-4a39-bdbb-40e01f5f72cb)
-
-![Screenshot 2023-06-05 at 21 46 42](https://github.com/AnnaAxelsson051/Movie-System1/assets/103879144/49be795a-aaf4-4717-ba29-94819267b377)
+![User Interface](user-interface2.png)
 
