@@ -1,4 +1,4 @@
-# FORECAST FETCHER
+# Forecast Fetcher
 
 ## User Interface
 
